@@ -17,6 +17,25 @@ number_of_dots = 10
 #               (234, 167, 171), (171, 206, 190), (103, 127, 156), (165, 202, 210), (61, 60, 72), (183, 190, 204),
 #               (78, 66, 42), (23, 99, 96)]
 
+#                                   --------------------------------------------------------------
+#                                             colorgram module to extract colors from image.jpg
+#                                   --------------------------------------------------------------
+
+#import colorgram
+#rgb_colors = []
+#colore =  colorgram.extraxt('image.jpg', 30)
+#for color in colors:
+#       r = color.rgb.r
+#       g = color.rgb.g
+#       b = color.rgb.b
+#       new_color = (r, g, b)
+#       rgb_colors.append(new_color)
+#                                   --------------------------------------------------------------
+#                                   --------------------------------------------------------------
+
+
+
+
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
