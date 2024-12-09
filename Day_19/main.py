@@ -3,7 +3,7 @@ from turtle import Turtle, Screen
 screen = Screen()
 
 #  Setting the Screen Size  *****************************/
-screen.setup(width=500, height=400)
+screen.setup(width=600, height=400)
 
 #  Setting the Finish Line    *************************/
 y_turtle = Turtle()
@@ -24,7 +24,7 @@ is_race_on = False
 for color in colors:
     new_turtle = Turtle("turtle")
     new_turtle.penup()
-    new_turtle.goto(x=-230, y=i)
+    new_turtle.goto(x=-280, y=i)
     new_turtle.color(color)
     turtle_list.append(new_turtle)
     i = i + 50
