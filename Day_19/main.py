@@ -2,7 +2,7 @@ import random
 from turtle import Turtle, Screen
 screen = Screen()
 
-#  Setting the Screen Size  *****************************/
+#****************************************************  Setting the Screen Size  *****************************/
 screen.setup(width=600, height=400)
 
 #  Setting the Finish Line    *************************/
@@ -14,7 +14,7 @@ y_turtle.pendown()
 y_turtle.fd(360)
 y_turtle.hideturtle()
 
-#  Setting the Turtle Colour , I is used to decide Y axis,         ********************************************/
+#***************************  Setting the Turtle Colour , I is used to decide Y axis,         ********************************************/
 colors = ["purple", "blue",  "indigo", "green", "yellow", "orange", "red"]
 i = -150
 turtle_list = []
