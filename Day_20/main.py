@@ -3,6 +3,8 @@ from snake import Snake
 
 
 snake = Snake()
+
+
 snake.screen_setup()
 
 
