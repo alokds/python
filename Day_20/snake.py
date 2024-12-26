@@ -59,9 +59,6 @@ class Snake(ScoreBoard):
             self.segments[seg_pos].goto(new_x, new_y)
         self.segments[0].fd(MOVE_DISTANCE)
 
-# **********************   Detect Collision with Tail **************************
-
-
 # ***********************   Snake Game       ***********************/
 
     def game(self):
@@ -84,10 +81,9 @@ class Snake(ScoreBoard):
                     or self.segments[0].ycor() < -290):
                 is_game_on = False
                 self.game_over()
-            for segment in self.segments:
-                if segment == self.segments[0]:
-                    pass
-                elif self.segments[0].distance(segment) < 5:
+# **********************   Detect Collision with Tail ************************************
+            for segment in self.segments[1:]:
+                if self.segments[0].distance(segment) < 5:
                     self.game_over()
                     is_game_on = False
 
