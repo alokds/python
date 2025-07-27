@@ -59,6 +59,14 @@ class Snake(ScoreBoard):
             self.segments[seg_pos].goto(new_x, new_y)
         self.segments[0].fd(MOVE_DISTANCE)
 
+# ********************************  RESET SNAKE  once the game is over *****************************
+
+    def reset_snake(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+
 # ***********************   Snake Game       ***********************/
 
     def game(self):
@@ -75,16 +83,21 @@ class Snake(ScoreBoard):
             screen.onkey(self.right, "Right")
             if self.segments[0].distance(food) <= 10:
                 food.new_loc()
+                Snake.increase_score()
                 Snake.pnt_scr(self)
                 Snake.snake_tail(self)
+#  ******************************   Detect Collision With WALL  *****************************
             if (self.segments[0].xcor() > 290 or self.segments[0].xcor() < -290 or self.segments[0].ycor() > 270
                     or self.segments[0].ycor() < -290):
                 is_game_on = False
-                self.game_over()
+                self.reset()
+                self.reset_snake()
+
 # **********************   Detect Collision with Tail ************************************
             for segment in self.segments[1:]:
                 if self.segments[0].distance(segment) < 5:
-                    self.game_over()
+                    self.reset()
+                    self.reset_snake()
                     is_game_on = False
 
 

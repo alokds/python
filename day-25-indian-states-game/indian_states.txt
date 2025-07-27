@@ -1,0 +1,33 @@
+state,x,y
+Andhra Pradesh,-28,-72
+Arunachal Pradesh,122,81
+Assam,77,51
+Bihar,30,39
+Chhattisgarh,-2,-5
+Goa,-78,-65
+Gujarat,-100,14
+Haryana,-52,73
+Himachal Pradesh,-46,101
+Jharkhand,26,20
+Karnataka,-60,-72
+Kerala,-56,-122
+Maharashtra,-68,-26
+Madhya Pradesh,-43,15
+Manipur,110,35
+Meghalaya,83,39
+Mizoram,101,19
+Nagaland,115,51
+Odisha,18,-13
+Punjab,-60,89
+Rajasthan,-82,53
+Sikkim,57,60
+Tamil Nadu,-38,-107
+Tripura,87,20
+Telangana,-29,-39
+Uttar Pradesh,-18,57
+Uttarakhand,-28,85
+West Bengal,54,11
+Andaman And Nicobar,110,-85
+Lakshadweep,-102,-93
+Ladakh,-38,129
+Jammu And Kashmir,-67,122
