@@ -1,0 +1,22 @@
+//STEPi    EXEC DSNUPROC,UID='SWUNLOUB',UTPROC='',SYSTEM='SSN'       
+//SYSPRINT DD SYSOUT=*                                                
+//SYSIN DD *                                                          
+  TEMPLATE UNLDDS                                                     
+  UNIT SYSDA                                                          
+  SPACE (200,100) CYL                                            
+  VOLCNT 40                                                        
+  BUFNO 30                                                         
+  RETPD 1                                                             
+  DSN 'SA1.P&SSID..&DB..&TS..UNLD'                            
+  TEMPLATE PUNCHDDS                                                   
+  UNIT SYSDA                                                          
+  MAXPRIME 1                                                          
+  RETPD 1                                                             
+  DSN 'SA1.P&SSID..&DB..&TS..PUNC'         
+     LISTDEF  UNLOAD_TS                             
+     INCLUDE TABLESPACE NAME
+UNLOAD LIST UNLOAD_TS                              
+PUNCHDDN PUNCHDDS                                  
+UNLDDN   UNLDDS  
+//*                                  
+ 
