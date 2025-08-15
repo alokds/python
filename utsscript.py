@@ -1,7 +1,6 @@
 from datetime import datetime
-schemas = ["utslist.txt"]      #--- change this file with list of object
+schemas = ["cadsname.txt"]     #--- change this file with list of object
 # job=["job.txt"]
-# schemas = ["cadsname.txt"]
 Subsystem='DB2A'
 LOCATION='UKLGDB2A'
 REMOTE='UKLGDBFN'
